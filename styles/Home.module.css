@@ -1,0 +1,105 @@
+.page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+.main {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 56px 20px 80px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #dbeafe;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 18px 38px rgba(15, 23, 42, 0.07);
+}
+
+.card h1 {
+  margin: 0 0 20px;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.button {
+  border: none;
+  border-radius: 10px;
+  background: #0f766e;
+  color: #fff;
+  padding: 10px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.list {
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.item {
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+}
+
+.link {
+  display: grid;
+  gap: 4px;
+  text-decoration: none;
+  color: #0f172a;
+  padding: 12px;
+}
+
+.link:hover {
+  background: #f8fafc;
+}
+
+.projectName {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.projectMeta {
+  font-size: 13px;
+  color: #0f766e;
+}
+
+.projectId {
+  font-size: 12px;
+  color: #64748b;
+  word-break: break-all;
+}
+
+.error {
+  margin: 8px 0;
+  color: #dc2626;
+}
+
+@media (max-width: 640px) {
+  .form {
+    flex-direction: column;
+  }
+}

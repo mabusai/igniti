@@ -1,0 +1,75 @@
+.page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.main {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 44px 20px 80px;
+  display: grid;
+  gap: 18px;
+}
+
+.header h1 {
+  margin: 0 0 8px;
+}
+
+.id {
+  margin: 0 0 10px;
+  color: #64748b;
+  font-size: 12px;
+  word-break: break-all;
+}
+
+.backLink {
+  color: #0f766e;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.viewerSection {
+  background: #ffffff;
+  border: 1px solid #dbeafe;
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.06);
+}
+
+.viewer {
+  width: 100%;
+  height: 70vh;
+  min-height: 420px;
+  border-radius: 12px;
+  background: radial-gradient(circle at top, #f8fafc 0%, #dbeafe 100%);
+}
+
+.uploadSection {
+  background: #fff;
+  border: 1px solid #dbeafe;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.uploadLabel {
+  display: inline-block;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.input {
+  display: block;
+}
+
+.error {
+  margin: 8px 0 0;
+  color: #dc2626;
+}
+
+@media (max-width: 640px) {
+  .viewer {
+    height: 55vh;
+    min-height: 320px;
+  }
+}
