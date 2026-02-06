@@ -3,7 +3,7 @@ import { saveProjectModel } from '../../../../lib/projectStore'
 export const config = {
   api: {
     bodyParser: {
-      sizeLimit: '30mb',
+      sizeLimit: '60mb',
     },
   },
 }

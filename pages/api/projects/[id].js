@@ -8,12 +8,16 @@ export default async function handler(req, res) {
   }
 
   const { id } = req.query
-  const project = await getProjectById(id)
+  try {
+    const project = await getProjectById(id)
 
-  if (!project) {
-    res.status(404).json({ error: 'Project not found' })
-    return
+    if (!project) {
+      res.status(404).json({ error: 'Project not found' })
+      return
+    }
+
+    res.status(200).json({ project })
+  } catch (error) {
+    res.status(400).json({ error: error.message })
   }
-
-  res.status(200).json({ project })
 }

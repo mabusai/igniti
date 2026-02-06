@@ -9,8 +9,10 @@
     "export": "next build && next export"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.49.8",
     "next": "^16.0.7",
     "react": "^19.2.1",
-    "react-dom": "^19.2.1"
+    "react-dom": "^19.2.1",
+    "three": "^0.181.1"
   }
 }
